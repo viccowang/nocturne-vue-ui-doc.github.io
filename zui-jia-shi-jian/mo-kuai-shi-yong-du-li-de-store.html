@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>模块使用独立的Store · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../zi-ding-yi-zu-jian/eventbus.html" />
+    
+    
+    <link rel="prev" href="ding-yi-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">平台介绍</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">开发指南</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../kai-fa-zhi-nan/kuai-su-shang-shou.html">
+            
+                <a href="../kai-fa-zhi-nan/kuai-su-shang-shou.html">
+            
+                    
+                    快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../kai-fa-zhi-nan/xiang-mu-jie-gou.html">
+            
+                <a href="../kai-fa-zhi-nan/xiang-mu-jie-gou.html">
+            
+                    
+                    项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../kai-fa-zhi-nan/ji-ben-pei-zhi.html">
+            
+                <a href="../kai-fa-zhi-nan/ji-ben-pei-zhi.html">
+            
+                    
+                    基本配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">自定义组件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../zi-ding-yi-zu-jian/dashboard.html">
+            
+                <a href="../zi-ding-yi-zu-jian/dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../zi-ding-yi-zu-jian/nextpage.html">
+            
+                <a href="../zi-ding-yi-zu-jian/nextpage.html">
+            
+                    
+                    NextPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../zi-ding-yi-zu-jian/navbutton.html">
+            
+                <a href="../zi-ding-yi-zu-jian/navbutton.html">
+            
+                    
+                    NavButton
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../zi-ding-yi-zu-jian/beauticontext.html">
+            
+                <a href="../zi-ding-yi-zu-jian/beauticontext.html">
+            
+                    
+                    BeautiContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../zi-ding-yi-zu-jian/commonsearch.html">
+            
+                <a href="../zi-ding-yi-zu-jian/commonsearch.html">
+            
+                    
+                    CommonSearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../zi-ding-yi-zu-jian/commontable.html">
+            
+                <a href="../zi-ding-yi-zu-jian/commontable.html">
+            
+                    
+                    CommonTable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../zi-ding-yi-zu-jian/generatetree.html">
+            
+                <a href="../zi-ding-yi-zu-jian/generatetree.html">
+            
+                    
+                    GenerateTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">最佳实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="dong-tai-pei-zhi-lu-you-biao.html">
+            
+                <a href="dong-tai-pei-zhi-lu-you-biao.html">
+            
+                    
+                    配置路由表与访问权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="ding-yi-api.html">
+            
+                <a href="ding-yi-api.html">
+            
+                    
+                    定义API及使用HTTP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="mo-kuai-shi-yong-du-li-de-store.html">
+            
+                <a href="mo-kuai-shi-yong-du-li-de-store.html">
+            
+                    
+                    模块使用独立的Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../zi-ding-yi-zu-jian/eventbus.html">
+            
+                <a href="../zi-ding-yi-zu-jian/eventbus.html">
+            
+                    
+                    透过全局Eventbus传递数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="zi-ding-yi-biao-dan-yan-zheng-gui-ze.html">
+            
+                <a href="zi-ding-yi-biao-dan-yan-zheng-gui-ze.html">
+            
+                    
+                    自定义表单验证规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="vuezu-jian-de-ding-yi.html">
+            
+                <a href="vuezu-jian-de-ding-yi.html">
+            
+                    
+                    Vue组件的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="vscode-pei-zhi-zhi-nan.html">
+            
+                <a href="vscode-pei-zhi-zhi-nan.html">
+            
+                    
+                    vscode 配置指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="sheng-chan-huan-jing-da-bao-zhu-yi-shi-xiang.html">
+            
+                <a href="sheng-chan-huan-jing-da-bao-zhu-yi-shi-xiang.html">
+            
+                    
+                    生产环境打包注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >模块使用独立的Store</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5728;&#x6A21;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x72EC;&#x7ACB;&#x7684;store&#x6765;&#x7BA1;&#x7406;&#x72B6;&#x6001;">&#x5728;&#x6A21;&#x5757;&#x4E2D;&#x4F7F;&#x7528;&#x72EC;&#x7ACB;&#x7684;Store&#x6765;&#x7BA1;&#x7406;&#x72B6;&#x6001;</h2>
+<hr>
+<p>&#x5728;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5F53;&#x4E2D;,&#x6709;&#x65F6;&#x5019;&#x4F1A;&#x6D89;&#x53CA;&#x5F88;&#x591A;&#x5927;&#x578B;&#x6A21;&#x5757;, &#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x4E2D;&#x5982;&#x679C;&#x6240;&#x6709;&#x72B6;&#x6001;&#x6570;&#x636E;&#x90FD;&#x5B58;&#x653E;&#x5728;&#x5404;&#x4E2A;&#x72EC;&#x7ACB;&#x7EC4;&#x4EF6;&#x4E2D;&#x7BA1;&#x7406;&#x7684;&#x8BDD;,&#x4E0D;&#x8BBA;&#x662F;&#x76F8;&#x4E92;&#x4F20;&#x503C;&#x8FD8;&#x662F;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x90FD;&#x4F1A;&#x663E;&#x5F97;&#x975E;&#x5E38;&#x9EBB;&#x70E6;,&#x5982;&#x679C;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;&#x5C42;&#x7EA7;&#x591A;,&#x90A3;&#x66F4;&#x662F;&#x5669;&#x68A6;,&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x80FD;&#x52A8;&#x6001;&#x7684;&#x5728;&#x5E73;&#x53F0;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#x4E2D;&#x6CE8;&#x518C;&#x548C;&#x5378;&#x8F7D;store&#x7684;&#x80FD;&#x529B;.
+&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;:</p>
+<ul>
+<li>&#x968F;&#x65F6;&#x7528;&#x968F;&#x65F6;&#x521B;&#x5EFA;</li>
+<li>&#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x65F6;&#x53EF;&#x4EE5;&#x540C;&#x6B65;&#x9500;&#x6BC1;&#x72B6;&#x6001;,&#x4E0D;&#x7559;&#x5783;&#x573E;</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;&#x4FDD;&#x7559;&#x7EC4;&#x4EF6;&#x72B6;&#x6001;,&#x4E0D;&#x9500;&#x6BC1;&#x5373;&#x53EF;</li>
+</ul>
+<h4 id="&#x7B2C;&#x4E00;&#x6B65;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x6309;&#x7167;vuex&#x7684;&#x89C4;&#x8303;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;store">&#x7B2C;&#x4E00;&#x6B65;,&#x6211;&#x4EEC;&#x9996;&#x5148;&#x6309;&#x7167;Vuex&#x7684;&#x89C4;&#x8303;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;store</h4>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9996;&#x9875;&#x7EC4;&#x4EF6;&#x7684;&#x4F8B;&#x5B50;</span>
+<span class="token keyword">const</span> Dashborad <span class="token operator">=</span> <span class="token punctuation">{</span>
+  namespaced<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    map<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    SET_MAP_STATE <span class="token punctuation">(</span>state<span class="token punctuation">,</span> mapParams<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>map <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> state<span class="token punctuation">.</span>map<span class="token punctuation">,</span> mapParams<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    GET_MAP_STATE <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>map
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    setMapState <span class="token punctuation">(</span><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&apos;SET_MAP_STATE&apos;</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    getMapState <span class="token punctuation">(</span><span class="token punctuation">{</span> commit <span class="token punctuation">}</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&apos;GET_MAP_STATE&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Dashborad
+</code></pre>
+<h4 id="&#x7B2C;&#x4E8C;&#x6B65;&#x521B;&#x5EFA;&#x5B89;&#x88C5;store&#x7684;&#x65B9;&#x6CD5;">&#x7B2C;&#x4E8C;&#x6B65;,&#x521B;&#x5EFA;&#x5B89;&#x88C5;store&#x7684;&#x65B9;&#x6CD5;</h4>
+<p>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B89;&#x88C5;&#x548C;&#x5378;&#x8F7D;&#x5C40;&#x90E8;store&#x7684;&#x6587;&#x4EF6;,&#x8BE5;&#x6587;&#x4EF6;&#x4F1A;&#x5BFC;&#x51FA;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;<code>install</code>&#x7528;&#x6765;&#x6CE8;&#x518C;store&#x4EE5;&#x53CA;<code>uninstall</code>&#x7528;&#x4E8E;&#x5378;&#x8F7D;store.</p>
+<pre class="language-"><code class="lang-js">
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">&apos;@/plugins/store&apos;</span>
+<span class="token keyword">import</span> Dashboard <span class="token keyword">from</span> <span class="token string">&apos;./store&apos;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  install <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">registerModule</span><span class="token punctuation">(</span><span class="token string">&apos;Dashboard&apos;</span><span class="token punctuation">,</span> Dashboard<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  uninstall <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    store<span class="token punctuation">.</span><span class="token function">unregisterModule</span><span class="token punctuation">(</span><span class="token string">&apos;Dashboard&apos;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x7B2C;&#x4E09;&#x6B65;-&#x5728;&#x6839;&#x7EC4;&#x4EF6;&#x4E2D;&#x6CE8;&#x518C;&#x548C;&#x5378;&#x8F7D;store">&#x7B2C;&#x4E09;&#x6B65;, &#x5728;&#x6839;&#x7EC4;&#x4EF6;&#x4E2D;&#x6CE8;&#x518C;&#x548C;&#x5378;&#x8F7D;store</h4>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// Dashboard store</span>
+<span class="token keyword">import</span> DashboardStore <span class="token keyword">from</span> <span class="token string">&apos;./Store&apos;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+   beforeCreate <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// &#x52A8;&#x6001;&#x6CE8;&#x518C; store</span>
+    DashboardStore<span class="token punctuation">.</span><span class="token function">install</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  beforeDestroy <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// &#x52A8;&#x6001;&#x9500;&#x6BC1; store</span>
+    DashboardStore<span class="token punctuation">.</span><span class="token function">uninstall</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="&#x6700;&#x540E;-&#x65E2;&#x53EF;&#x4EE5;&#x5728;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x8BE5;store&#x4E86;">&#x6700;&#x540E;, &#x65E2;&#x53EF;&#x4EE5;&#x5728;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x8BE5;store&#x4E86;</h4>
+<pre class="language-"><code class="lang-js"><span class="token operator">...</span>
+itemResize <span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">&apos;Dashboard/setOperateItem&apos;</span><span class="token punctuation">,</span> item<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token operator">...</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x5373;&#x53EF;&#x5728;&#x521B;&#x5EFA;<code>Dashboard</code>&#x6A21;&#x5757;&#x65F6;&#x81EA;&#x52A8;&#x521B;&#x5EFA;<code>store</code>&#x4E86;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ding-yi-api.html" class="navigation navigation-prev " aria-label="Previous page: 定义API及使用HTTP服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../zi-ding-yi-zu-jian/eventbus.html" class="navigation navigation-next " aria-label="Next page: 透过全局Eventbus传递数据">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模块使用独立的Store","level":"4.3","depth":1,"next":{"title":"透过全局Eventbus传递数据","level":"4.4","depth":1,"path":"zi-ding-yi-zu-jian/eventbus.md","ref":"zi-ding-yi-zu-jian/eventbus.md","articles":[]},"previous":{"title":"定义API及使用HTTP服务","level":"4.2","depth":1,"path":"zui-jia-shi-jian/ding-yi-api.md","ref":"zui-jia-shi-jian/ding-yi-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","alerts","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"]},"emphasize":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.md","mtime":"2019-04-30T03:11:28.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-30T03:41:08.845Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
