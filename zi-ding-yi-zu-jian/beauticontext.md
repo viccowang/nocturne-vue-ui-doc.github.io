@@ -15,7 +15,7 @@
 
 #### 通过CDN直接引用
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/vue-beauti-context@0.1.1/dist/vue-beauti-context.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-beauti-context@0.1.5/dist/vue-beauti-context.umd.min.js"></script>
 ```
 
 #### 在Vue单文件中引用

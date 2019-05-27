@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>定义API及使用HTTP服务 · GitBook</title>
+        <title>全局属性和公共方法 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mo-kuai-shi-yong-du-li-de-store.html" />
+    <link rel="next" href="dong-tai-pei-zhi-lu-you-biao.html" />
     
     
-    <link rel="prev" href="dong-tai-pei-zhi-lu-you-biao.html" />
+    <link rel="prev" href="../zi-ding-yi-zu-jian/generatetree.html" />
     
 
     </head>
@@ -255,7 +255,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="quan-ju-shu-xing-he-gong-gong-fang-fa.html">
+        <li class="chapter active" data-level="4.1" data-path="quan-ju-shu-xing-he-gong-gong-fang-fa.html">
             
                 <a href="quan-ju-shu-xing-he-gong-gong-fang-fa.html">
             
@@ -281,7 +281,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.3" data-path="ding-yi-api.html">
+        <li class="chapter " data-level="4.3" data-path="ding-yi-api.html">
             
                 <a href="ding-yi-api.html">
             
@@ -402,7 +402,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >定义API及使用HTTP服务</a>
+        <a href=".." >全局属性和公共方法</a>
     </h1>
 </div>
 
@@ -417,70 +417,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x5B9A;&#x4E49;api&#x53CA;&#x4F7F;&#x7528;http&#x670D;&#x52A1;">&#x5B9A;&#x4E49;API&#x53CA;&#x4F7F;&#x7528;HTTP&#x670D;&#x52A1;</h2>
+                                <h2 id="&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#x8868;&#x4E0E;&#x8BBF;&#x95EE;&#x6743;&#x9650;">&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#x8868;&#x4E0E;&#x8BBF;&#x95EE;&#x6743;&#x9650;</h2>
 <hr>
-<p>&#x8FD9;&#x91CC;&#x7684;API&#x5B9A;&#x4E49;&#x6307;&#x5728;<code>/service/api/</code>&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;js&#x6587;&#x4EF6;&#x6765;&#x5B9A;&#x4E49;&#x4E1A;&#x52A1;&#x4E2D;&#x7684;API&#x6A21;&#x578B;&#x63A5;&#x53E3;.&#x8FD9;&#x91CC;&#x7684;API&#x5C06;&#x4F1A;&#x5728;&#x4E1A;&#x52A1;&#x5C42;&#x4E2D;&#x8C03;&#x7528;.
-&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x5B9E;&#x8DF5;&#x89C4;&#x5219;:</p>
-<ul>
-<li>API&#x7684;&#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x4E0E;API&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x4FDD;&#x6301;&#x4E00;&#x81F4;,&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;&#x65E0;&#x8BBA;&#x662F;&#x5728;&#x7C7B;&#x4F3C;yAPI&#x4E2D;&#x67E5;&#x9605;&#x8C03;&#x8BD5;API&#x65F6;&#x6216;&#x8005;&#x67E5;&#x9605;API&#x6587;&#x6863;&#x65F6;,&#x4EE3;&#x7801;&#x4E2D;&#x7684;API&#x7ED3;&#x6784;&#x59CB;&#x7EC8;&#x662F;&#x548C;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5B8C;&#x5168;&#x4E00;&#x6837;.</li>
-<li>API&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x5E94;&#x4E0E;API&#x6587;&#x6863;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6A21;&#x5757;&#x4FDD;&#x6301;&#x4E00;&#x81F4;.</li>
-<li>API&#x7684;&#x4E66;&#x5199;&#x5E94;&#x4FDD;&#x6301;&#x5728;&#x540C;&#x4E00;&#x9879;&#x76EE;&#x4E2D;&#x4FDD;&#x6301;&#x7EDF;&#x4E00;</li>
-</ul>
-<blockquote>
-<p><strong>[info] &#x5173;&#x4E8E;RESTful </strong></p>
-<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x4F7F;&#x7528;&#x4E86;REST&#x89C4;&#x8303;,&#x5219;&#x8BF7;&#x5728;&#x5B9A;&#x4E49;API&#x65F6;&#x9075;&#x5FAA;&#x5176;&#x5B9A;&#x4E49;&#x89C4;&#x5219;.</p>
-</blockquote>
-<h4 id="api&#x6A21;&#x578B;&#x793A;&#x4F8B;">API&#x6A21;&#x578B;&#x793A;&#x4F8B;</h4>
-<pre class="language-"><code class="lang-js">
-<span class="token keyword">export</span> <span class="token keyword">const</span> platformApi <span class="token operator">=</span> <span class="token punctuation">{</span>
-  menu<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      name<span class="token punctuation">:</span> <span class="token string">&apos;list&apos;</span><span class="token punctuation">,</span>
-      method<span class="token punctuation">:</span> <span class="token string">&apos;POST&apos;</span><span class="token punctuation">,</span>
-      path<span class="token punctuation">:</span> <span class="token string">&apos;/menu/list&apos;</span><span class="token punctuation">,</span>
-      mockPath<span class="token punctuation">:</span> <span class="token string">&apos;/menu/list&apos;</span><span class="token punctuation">,</span>
-      params<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        role<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      desc<span class="token punctuation">:</span> <span class="token string">&apos;&#x83B7;&#x53D6;&#x83DC;&#x5355;&#x5217;&#x8868;&apos;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span>
-      name<span class="token punctuation">:</span> <span class="token string">&apos;heatmapstart&apos;</span><span class="token punctuation">,</span>
-      method<span class="token punctuation">:</span> <span class="token string">&apos;POST&apos;</span><span class="token punctuation">,</span>
-      path<span class="token punctuation">:</span> <span class="token string">&apos;/temp/heatmap-start&apos;</span><span class="token punctuation">,</span>
-      mockPath<span class="token punctuation">:</span> <span class="token string">&apos;/temp/heatmap-start&apos;</span><span class="token punctuation">,</span>
-      params<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-      desc<span class="token punctuation">:</span> <span class="token string">&apos;&#x70ED;&#x529B;&#x56FE;&apos;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token punctuation">]</span>
+<p>&#x4E3A;&#x4E86;&#x65E5;&#x540E;&#x5F00;&#x53D1;&#x65B9;&#x4FBF;&#xFF0C;&#x5728;&#x8BBF;&#x95EE;&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x7684;&#x5C5E;&#x6027;&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E86;&#x5168;&#x5C40;&#x7684;&#x901A;&#x7528;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x3002;&#x5373;&#x5C06;&#x516C;&#x5171;&#x90E8;&#x5206;&#x7ED1;&#x5B9A;&#x5230;&#x4E86;Vue&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5728;&#x4EFB;&#x4F55;Vue&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x4E2D;&#x5747;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</p>
+<h4 id="config">$config</h4>
+<p>&#x901A;&#x8FC7;&#x8BE5;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;<code>config/settings.js</code>&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x914D;&#x7F6E;&#x9879;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x4F8B;&#x5982;&#x83B7;&#x53D6;websocket&#x914D;&#x7F6E;&#x9879;</span>
+<span class="token operator">...</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> WS_CONFIG <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$config
+</code></pre>
+<h4 id="const">$const</h4>
+<p>&#x901A;&#x8FC7;&#x8BE5;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;<code>config/const/platform.js</code>&#x4E2D;&#x7684;&#x5168;&#x90E8;&#x5E38;&#x91CF;&#x914D;&#x7F6E;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x4F8B;&#x5982;&#x83B7;&#x53D6;&#x4FA7;&#x8FB9;&#x680F;&#x7684;&#x5E38;&#x91CF;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> shortcut <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$<span class="token keyword">const</span>
+</code></pre>
+<h4 id="api">$api</h4>
+<p>&#x901A;&#x8FC7;&#x8BE5;&#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x7528;&#x4EFB;&#x4F55;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x4F8B;&#x5982;&#x8C03;&#x7528;menuList&#x63A5;&#x53E3;</span>
+<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">[</span><span class="token string">&apos;menu.list&apos;</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="to">$to</h4>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;Promise&#x7684;&#x5305;&#x88C5;&#x5668;&#xFF0C;&#x4ECE;&#x800C;&#x907F;&#x514D;&#x5957;&#x7528;try...catch&#x8BED;&#x53E5;&#xFF0C;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x6D01;&#xFF0C;&#x9605;&#x8BFB;&#x66F4;&#x5BB9;&#x6613;</p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x4F8B;&#x5982;</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>err<span class="token punctuation">,</span> res<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$to</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">[</span><span class="token string">&apos;menu.list&apos;</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&apos;...&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// do sth.</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h4 id="vue&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;">Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;</h4>
-<p>&#x63A5;&#x7740;, &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x6240;&#x6709;Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x8C03;&#x7528;:</p>
-<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/**
- * &#x8C03;&#x7528;&#x4E00;&#x4E2A;API&#x63A5;&#x53E3;
- **/</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span>$api<span class="token punctuation">[</span><span class="token string">&apos;menu.list&apos;</span><span class="token punctuation">]</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<h4 id="ajax">$ajax</h4>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x662F;axios&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x8BCD;&#x6CD5;&#x66FF;&#x6362;&#x3002; $ajax === axios &#x3002; &#x6211;&#x4EEC;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x5E73;&#x65F6;&#x770B;&#x4E0A;&#x53BB;&#x6BD4;&#x8F83;&#x719F;&#x6089;&#x7F62;&#x4E86;&#x3002;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;<a href="https://github.com/axios/axios" target="_blank">axios on github</a></p>
+<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// &#x4F8B;&#x5982;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    url<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+    method<span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<h4 id="&#x975E;vue&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;">&#x975E;Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;</h4>
-<p>&#x5982;&#x679C;&#x5728;&#x975E;Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x5E0C;&#x671B;&#x8C03;&#x7528;&#x63A5;&#x53E3;. &#x5219;&#x9700;&#x8981;&#x5148;&#x5F15;&#x5165;API&#x670D;&#x52A1;</p>
-<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> api <span class="token keyword">from</span> <span class="token string">&apos;@/plugins/api&apos;</span>
-
-api<span class="token punctuation">[</span><span class="token string">&apos;menu.list&apos;</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">{</span>userRoles<span class="token punctuation">:</span> roles<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res<span class="token operator">=</span><span class="token operator">&gt;</span><span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
-</code></pre>
-<h4 id="&#x4F7F;&#x7528;&#x539F;&#x751F;axios&#x7EC4;&#x4EF6;">&#x4F7F;&#x7528;&#x539F;&#x751F;axios&#x7EC4;&#x4EF6;</h4>
-<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x539F;&#x751F;axios&#x670D;&#x52A1;, &#x90A3;&#x4E48;&#x76EE;&#x524D;&#x53EA;&#x53EF;&#x4EE5;&#x5728;Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;,&#x8FD9;&#x91CC;&#x76F4;&#x63A5;&#x5C06;axios&#x6302;&#x8F7D;&#x5230;&#x4E86;
-Vue&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x4E0A;, &#x56E0;&#x6B64;&#x4E0A;&#x4E0B;&#x4E8C;&#x8005;&#x4F7F;&#x7528;&#x65E0;&#x4EFB;&#x4F55;&#x533A;&#x522B;.&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;,&#x8BF7;&#x53C2;&#x8003;axios&#x6587;&#x6863;.</p>
-<pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">// Vue&#x7EC4;&#x4EF6;&#x4E2D;&#x8C03;&#x7528;&#x6846;&#x67B6;&#x65B9;&#x6CD5;</span>
-<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$ajax</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-<span class="token comment" spellcheck="true">// &#x8C03;&#x7528;&#x539F;&#x751F;&#x65B9;&#x6CD5;</span>
-<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">&apos;./axios&apos;</span>
-axios<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-axios<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token operator">...</span>
-</code></pre>
+<h4 id="ws">$ws</h4>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x516C;&#x53F8;&#x5173;&#x4E8E;websocket&#x5C01;&#x88C5;&#x7684;&#x4E1A;&#x52A1;.</p>
 
                                 
                                 </section>
@@ -508,12 +483,12 @@ axios<span class="token punctuation">.</span><span class="token function">post</
 
             
                 
-                <a href="dong-tai-pei-zhi-lu-you-biao.html" class="navigation navigation-prev " aria-label="Previous page: 配置路由表与访问权限">
+                <a href="../zi-ding-yi-zu-jian/generatetree.html" class="navigation navigation-prev " aria-label="Previous page: GenerateTree">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mo-kuai-shi-yong-du-li-de-store.html" class="navigation navigation-next " aria-label="Next page: 模块使用独立的Store">
+                <a href="dong-tai-pei-zhi-lu-you-biao.html" class="navigation navigation-next " aria-label="Next page: 配置路由表与访问权限">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -524,7 +499,7 @@ axios<span class="token punctuation">.</span><span class="token function">post</
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"定义API及使用HTTP服务","level":"4.3","depth":1,"next":{"title":"模块使用独立的Store","level":"4.4","depth":1,"path":"zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.md","ref":"zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.md","articles":[]},"previous":{"title":"配置路由表与访问权限","level":"4.2","depth":1,"path":"zui-jia-shi-jian/dong-tai-pei-zhi-lu-you-biao.md","ref":"zui-jia-shi-jian/dong-tai-pei-zhi-lu-you-biao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","alerts","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"]},"emphasize":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"zui-jia-shi-jian/ding-yi-api.md","mtime":"2019-05-27T06:08:15.389Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-27T06:41:53.322Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"全局属性和公共方法","level":"4.1","depth":1,"next":{"title":"配置路由表与访问权限","level":"4.2","depth":1,"path":"zui-jia-shi-jian/dong-tai-pei-zhi-lu-you-biao.md","ref":"zui-jia-shi-jian/dong-tai-pei-zhi-lu-you-biao.md","articles":[]},"previous":{"title":"GenerateTree","level":"3.7","depth":1,"path":"zi-ding-yi-zu-jian/generatetree.md","ref":"zi-ding-yi-zu-jian/generatetree.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","alerts","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"]},"emphasize":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"zui-jia-shi-jian/quan-ju-shu-xing-he-gong-gong-fang-fa.md","mtime":"2019-05-27T06:31:16.387Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-27T06:41:53.322Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
