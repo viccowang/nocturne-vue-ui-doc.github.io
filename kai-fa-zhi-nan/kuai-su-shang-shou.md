@@ -26,7 +26,8 @@ npm run serve
 启动完毕后,如果一切正常,你应该能看到控制台打印如下代码:
 
 ```
-DONE  Compiled successfully in 8485ms                                                                                                          13:46:27
+DONE  Compiled successfully in 8485ms
+
 Webpack Bundle Analyzer is started at http://127.0.0.1:8888
 Use Ctrl+C to close it
 
