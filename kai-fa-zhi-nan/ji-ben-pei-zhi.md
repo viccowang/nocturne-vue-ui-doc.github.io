@@ -36,7 +36,7 @@ export const API_DEFAULT_CONFIG = {
 }
 ```
 
-> 系统在```/server/```目录集成了一个简单的mockServer，可以通过```npm run mockServer```指令来启动。
+> 系统在```/server/```目录集成了一个简单的mockServer，可以通过```npm run mockServer```指令来启动, 默认的端口即为3000
 
 ---
 
@@ -74,16 +74,7 @@ export const platformApi = {
 ---
 
 #### 全局主题颜色
-目前全局配色一共有四款分别为
-```chalk```  蓝色,
-```jade```   绿色,
-```batman``` 黑色,
-```belles``` 粉色.
-分别对应大部分不同喜好. 这些配色的色值是可以定义的. 定义的位置在```config/const/platform.js```中.
-
-> **[info] 这里定义的非全局配色 **
->
-> 这里定义的是在自定义主题时展示的颜色，主题色需要通过ElementUI网站进行样式生成。目前框架对应的主题样式在```public/static/elementUI```目录中
+目前全局配色定义的位置在```config/const/platform.js```中, 我们可以根据不同的喜好定义任意的主颜色（默认我们给了一组彩虹色，一般情况下足够使用，不需要再额外配色）。系统会根据所定义的颜色动态生成相关的辅助色彩.定义的方式既是参考已定义的格式（K,V）
 
 
 

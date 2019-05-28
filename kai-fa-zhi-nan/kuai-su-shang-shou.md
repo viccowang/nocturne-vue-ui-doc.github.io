@@ -19,11 +19,11 @@ npm i
 在获取完毕依赖后,我们即可启动项目了:
 
 ```
-// start mockserver
+// 我们需要启动一个本地的mockServer来模拟动态数据，比如登录，菜单列表等
 npm run mockServer
 
-// start project
-npm start
+// 启动服务
+npm run serve
 ```
 
 启动完毕后,如果一切正常,你应该能看到控制台打印如下代码:
@@ -41,12 +41,7 @@ OK! 大功告成, 我们可以通过以上地址访问项目了.  :P
 
 我们通过以下指令即可完成生产环境的打包
 ```
-npm run build:admin
+npm run build
 ```
 
-#### 打包文件结构分析
-如果我们想查看打包后的文件结构,可以执行以下指令
-```
-npm run analyz:admin
-```
 
