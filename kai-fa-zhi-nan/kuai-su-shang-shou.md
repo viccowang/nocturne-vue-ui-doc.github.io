@@ -4,8 +4,7 @@
 
 #### 获取项目
 
-**目前项目属于私有状态，等完善后将公开**
-
+**目前对外暂不提供**
 
 
 #### 启动项目
@@ -19,19 +18,25 @@ npm i
 在获取完毕依赖后,我们即可启动项目了:
 
 ```
-// 我们需要启动一个本地的mockServer来模拟动态数据，比如登录，菜单列表等
-npm run mockServer
-
 // 启动服务
+// 我们会同时启动一个本地的mockServer来模拟动态数据，比如登录，菜单列表等
 npm run serve
 ```
 
 启动完毕后,如果一切正常,你应该能看到控制台打印如下代码:
 
 ```
-DONE  Compiled successfully in 23713ms
+DONE  Compiled successfully in 8485ms                                                                                                          13:46:27
+Webpack Bundle Analyzer is started at http://127.0.0.1:8888
+Use Ctrl+C to close it
 
- I  Your application is running here: http://0.0.0.0:8080
+  App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.10.10:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
 ```
 
 OK! 大功告成, 我们可以通过以上地址访问项目了.  :P
