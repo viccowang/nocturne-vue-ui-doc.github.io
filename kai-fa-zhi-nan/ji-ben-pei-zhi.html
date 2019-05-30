@@ -189,6 +189,19 @@
             
         </li>
     
+        <li class="chapter " data-level="2.7" data-path="shen-ceng-ji-cai-dan-ding-yi-pei-zhi.html">
+            
+                <a href="shen-ceng-ji-cai-dan-ding-yi-pei-zhi.html">
+            
+                    
+                    三级及以上路由菜单定义配置
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -268,7 +281,20 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.html">
+        <li class="chapter " data-level="4.1" data-path="../zui-jia-shi-jian/ye-wu-mo-kuai-de-ding-yi-gui-ze.html">
+            
+                <a href="../zui-jia-shi-jian/ye-wu-mo-kuai-de-ding-yi-gui-ze.html">
+            
+                    
+                    业务模块的定义规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.html">
             
                 <a href="../zui-jia-shi-jian/mo-kuai-shi-yong-du-li-de-store.html">
             
@@ -281,7 +307,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../zui-jia-shi-jian/zi-ding-yi-biao-dan-yan-zheng-gui-ze.html">
+        <li class="chapter " data-level="4.3" data-path="../zui-jia-shi-jian/zi-ding-yi-biao-dan-yan-zheng-gui-ze.html">
             
                 <a href="../zui-jia-shi-jian/zi-ding-yi-biao-dan-yan-zheng-gui-ze.html">
             
@@ -294,7 +320,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../zui-jia-shi-jian/shi-yong-es7-yu-fa-shi-yong-promise.html">
+        <li class="chapter " data-level="4.4" data-path="../zui-jia-shi-jian/shi-yong-es7-yu-fa-shi-yong-promise.html">
             
                 <a href="../zui-jia-shi-jian/shi-yong-es7-yu-fa-shi-yong-promise.html">
             
@@ -307,7 +333,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="../zui-jia-shi-jian/vuezu-jian-de-ding-yi.html">
+        <li class="chapter " data-level="4.5" data-path="../zui-jia-shi-jian/vuezu-jian-de-ding-yi.html">
             
                 <a href="../zui-jia-shi-jian/vuezu-jian-de-ding-yi.html">
             
@@ -320,7 +346,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="../zui-jia-shi-jian/vscode-pei-zhi-zhi-nan.html">
+        <li class="chapter " data-level="4.6" data-path="../zui-jia-shi-jian/vscode-pei-zhi-zhi-nan.html">
             
                 <a href="../zui-jia-shi-jian/vscode-pei-zhi-zhi-nan.html">
             
@@ -382,15 +408,15 @@
 <hr>
 <p>&#x6846;&#x67B6;&#x7684;&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x9879;&#x57FA;&#x672C;&#x90FD;&#x5728;<code>config/</code>&#x76EE;&#x5F55;&#x4E0B;,&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x5E38;&#x91CF;,&#x4EE5;&#x53CA;&#x5E73;&#x53F0;&#x57FA;&#x7840;&#x53C2;&#x6570;.</p>
 <h4 id="&#x914D;&#x7F6E;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x5E38;&#x91CF;&#x524D;&#x7F00;">&#x914D;&#x7F6E;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x5E38;&#x91CF;&#x524D;&#x7F00;</h4>
-<p>&#x8BE5;&#x524D;&#x7F00;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;session&#x6216;&#x8005;cookie,&#x4EE5;&#x53CA;store&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x4E34;&#x65F6;&#x5B58;&#x8D2E;&#x7684;&#x952E;&#x503C;.&#x914D;&#x7F6E;&#x7684;&#x4F4D;&#x7F6E;&#x5728;<code>config/settings.js</code>&#x4E2D;</p>
+<p>&#x8BE5;&#x524D;&#x7F00;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;session&#x6216;&#x8005;cookie,&#x4EE5;&#x53CA;store&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x4E34;&#x65F6;&#x5B58;&#x8D2E;&#x7684;&#x952E;&#x503C;.&#x914D;&#x7F6E;&#x7684;&#x4F4D;&#x7F6E;&#x5728;<code>config/settings.js</code>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x53D6;&#x9879;&#x76EE;&#x82F1;&#x6587;&#x540D;&#x79F0;&#x52A0;&#x4E0B;&#x5212;&#x7EBF;&#x5373;&#x53EF;</p>
 <pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/**
   * &#x5168;&#x5C40;&#x9879;&#x76EE;&#x540D;&#x79F0;
   */</span>
-<span class="token keyword">export</span> <span class="token keyword">const</span> PLATFORM_PERFIX_NAME <span class="token operator">=</span> <span class="token string">&apos;SET_YOUR_PROJECT_NAME&apos;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> PLATFORM_PERFIX_NAME <span class="token operator">=</span> <span class="token string">&apos;YOUR_PROJECT_NAME&apos;</span>
 </code></pre>
 <hr>
 <h4 id="&#x914D;&#x7F6E;&#x5F00;&#x53D1;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x5730;&#x5740;">&#x914D;&#x7F6E;&#x5F00;&#x53D1;&#x8BBF;&#x95EE;&#x5730;&#x5740;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x5730;&#x5740;</h4>
-<p>&#x8BBF;&#x95EE;&#x76EE;&#x5F55;&#x4E3A;<code>config/settings.js</code>&#x4E0B;&#x9762;:</p>
+<p>&#x8BBF;&#x95EE;&#x76EE;&#x5F55;&#x4E3A;<code>config/settings.js</code>&#x4E0B;&#x9762;&#xFF0C;<code>mockBaseUrl</code>&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x4F1A;&#x914D;&#x5408;&#x4E00;&#x5957;&#x5728;&#x7EBF;&#x6A21;&#x62DF;API&#x63A5;&#x53E3;&#x7684;&#x670D;&#x52A1;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x6A21;&#x62DF;&#x6570;&#x636E;&#x63D0;&#x4F9B;&#x7ED9;&#x524D;&#x7AEF;&#x4F7F;&#x7528;&#xFF0C;&#x8FD9;&#x6837;&#x540E;&#x7AEF;&#x7684;&#x5F00;&#x53D1;&#x987A;&#x5E8F;&#x5C31;&#x4E0D;&#x5FC5;&#x548C;&#x524D;&#x7AEF;&#x540C;&#x6B65;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x524D;&#x540E;&#x7AEF;&#x76F8;&#x4E92;&#x6C9F;&#x901A;&#x534F;&#x8C03;&#x597D;API&#x63A5;&#x53E3;&#x5373;&#x53EF;&#x3002;</p>
 <pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/**
   * API&#x63A5;&#x53E3;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x914D;&#x7F6E;
   */</span>
@@ -399,11 +425,12 @@
   mockBaseUrl<span class="token punctuation">:</span> <span class="token string">&apos;http://localhost:3000&apos;</span><span class="token punctuation">,</span>
   <span class="token comment" spellcheck="true">// &#x751F;&#x4EA7;&#x73AF;&#x5883;&#x5BF9;&#x5E94;&#x7684;API&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;</span>
   prodBaseUrl<span class="token punctuation">:</span> <span class="token string">&apos;http://100.10.10.10:8888&apos;</span><span class="token punctuation">,</span>
-  <span class="token comment" spellcheck="true">// </span>
+  <span class="token comment" spellcheck="true">// &#x6B64;&#x5904;&#x4E00;&#x822C;&#x4E0D;&#x5FC5;&#x4FEE;&#x6539;</span>
   isMocked<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">!==</span> <span class="token string">&apos;production&apos;</span><span class="token punctuation">,</span>
   <span class="token comment" spellcheck="true">// &#x5F00;&#x542F;&#x540E;&#x4F1A;&#x6253;&#x5370;&#x63A5;&#x53E3;&#x8BBF;&#x95EE;info</span>
   isDebug<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-  <span class="token comment" spellcheck="true">// &#x63A5;&#x53E3;&#x8FDE;&#x7F00;</span>
+  <span class="token comment" spellcheck="true">// &#x63A5;&#x53E3;&#x8FDE;&#x7F00;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C; this.$api[&apos;user.info&apos;]()&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4FEE;&#x6539;&#x4E86;</span>
+  <span class="token comment" spellcheck="true">// &#x8FDE;&#x63A5;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x4FEE;&#x6539;&#x4E3A;/&#xFF0C;&#x5219;&#x63A5;&#x53E3;&#x8C03;&#x7528;&#x4F1A;&#x53D8;&#x4E3A; this.$api[&apos;user/info&apos;]()&#x3002;&#x8FD9;&#x53EA;&#x662F;&#x4F7F;&#x7528;&#x4E60;&#x60EF;&#x95EE;&#x9898;&#x3002;</span>
   <span class="token comment" spellcheck="true">// user.info or user/info</span>
   sep<span class="token punctuation">:</span> <span class="token string">&apos;.&apos;</span>
 <span class="token punctuation">}</span>
@@ -413,7 +440,8 @@
 </blockquote>
 <hr>
 <h4 id="&#x914D;&#x7F6E;&#x9759;&#x6001;&#x6216;&#x52A8;&#x6001;&#x8DEF;&#x7531;">&#x914D;&#x7F6E;&#x9759;&#x6001;&#x6216;&#x52A8;&#x6001;&#x8DEF;&#x7531;</h4>
-<p>&#x5F00;&#x542F;&#x9759;&#x6001;&#x8DEF;&#x7531;&#x540E;,&#x9875;&#x9762;&#x8DEF;&#x7531;&#x5C06;&#x901A;&#x8FC7;<code>router/</code>&#x76EE;&#x5F55;&#x4E0B;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x7531;&#x8868;&#x8BBF;&#x95EE;&#x9875;&#x9762;</p>
+<p>&#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86;&#x9759;&#x6001;&#x8DEF;&#x7531;&#x548C;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x5F00;&#x542F;&#x9759;&#x6001;&#x8DEF;&#x7531;&#x540E;,&#x9875;&#x9762;&#x8DEF;&#x7531;&#x5C06;&#x901A;&#x8FC7;<code>router/</code>&#x76EE;&#x5F55;&#x4E0B;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x7531;&#x8868;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#xFF0C;&#x5176;&#x4E2D;&#x6211;&#x4EEC;&#x5C06;&#x6846;&#x67B6;&#x7EA7;&#xFF0C;&#x5373;&#x548C;&#x4E1A;&#x52A1;&#x6CA1;&#x6709;&#x5173;&#x7CFB;&#x7684;&#x6216;&#x8005;&#x516C;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x653E;&#x5728;<code>staticRoutes.js</code>&#x4E2D;&#xFF0C;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x9875;&#x9762;&#x7684;&#x8DEF;&#x7531;&#x653E;&#x5728;<code>asyncRoutes.js</code>&#x4E2D;&#x3002;</p>
 <pre class="language-"><code class="lang-js"><span class="token comment" spellcheck="true">/**
   * &#x8DEF;&#x7531;&#x8868;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x914D;&#x7F6E;
   */</span>
@@ -485,7 +513,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基本配置","level":"2.3","depth":1,"next":{"title":"全局属性和公共函数","level":"2.4","depth":1,"path":"zui-jia-shi-jian/quan-ju-shu-xing-he-gong-gong-fang-fa.md","ref":"zui-jia-shi-jian/quan-ju-shu-xing-he-gong-gong-fang-fa.md","articles":[]},"previous":{"title":"项目结构","level":"2.2","depth":1,"path":"kai-fa-zhi-nan/xiang-mu-jie-gou.md","ref":"kai-fa-zhi-nan/xiang-mu-jie-gou.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","alerts","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"]},"emphasize":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"kai-fa-zhi-nan/ji-ben-pei-zhi.md","mtime":"2019-05-29T02:05:31.066Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-29T02:43:41.967Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"基本配置","level":"2.3","depth":1,"next":{"title":"全局属性和公共函数","level":"2.4","depth":1,"path":"zui-jia-shi-jian/quan-ju-shu-xing-he-gong-gong-fang-fa.md","ref":"zui-jia-shi-jian/quan-ju-shu-xing-he-gong-gong-fang-fa.md","articles":[]},"previous":{"title":"项目结构","level":"2.2","depth":1,"path":"kai-fa-zhi-nan/xiang-mu-jie-gou.md","ref":"kai-fa-zhi-nan/xiang-mu-jie-gou.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","alerts","prism","-highlight","livereload"],"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"]},"emphasize":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css"}},"file":{"path":"kai-fa-zhi-nan/ji-ben-pei-zhi.md","mtime":"2019-05-30T01:26:08.376Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-30T05:25:47.130Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

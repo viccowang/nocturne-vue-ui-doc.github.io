@@ -8,6 +8,9 @@
 >
 > 我们应该在定义Props时**强制使用类型验证**模式,以避免出现运行时的错误.
 
+
+#### 普通Vue组件
+
 ```js
 import BarComponent from './BarComponent'
 export default {
@@ -25,17 +28,7 @@ export default {
     data () {
         tableList: []
     },
-    mixins: [],
-    beforeCreate () {},
-    created () {},
-    beforeMount () {},
     mounted () {},
-    beforeUpdate () {},
-    updated () {},
-    activated () {},
-    deactivated () {},
-    beforeDestroy () {},
-    destroyed () {},
     watch () {
         isStudent (newVal) {
             console.log(newVal)
@@ -46,8 +39,9 @@ export default {
              
          }   
     },
-    directives: {},
-    filters: {},
     components : { BarComponent }
 }
 ```
+
+#### 函数式组件
+
