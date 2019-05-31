@@ -4,9 +4,11 @@
 
 > **[warning] 关于name与props **
 >
-> 我们为了保证日后兼容Class模式的定义,组件的名称首字母必须为**大写**.
+> 组件的名称首字母必须为**大写**开头.
 >
 > 我们应该在定义Props时**强制使用类型验证**模式,以避免出现运行时的错误.
+> 
+
 
 
 #### 普通Vue组件
@@ -20,8 +22,8 @@ export default {
             type: String,
             required: true
         },
-        isStudent: {
-            type: Boolean,
+        age: {
+            type: Number,
             default: false
         }
     },
@@ -30,7 +32,7 @@ export default {
     },
     mounted () {},
     watch () {
-        isStudent (newVal) {
+        age (newVal) {
             console.log(newVal)
         }
     }
@@ -44,4 +46,23 @@ export default {
 ```
 
 #### 函数式组件
+
+我们在某些情况下需要使用类似```容器组件（包装组件）```的组件，即不做任何```DOM```渲染，只是需要在真正渲染组件之前做数据处理，那这类组件```Vue```建议我们使用函数式组件来减小开销。
+
+```js
+// FooWrapperComponent不会被渲染至DOM中，也不会出现在devtool调试窗口的组件树内
+export default {
+    name: 'FooWrapperComponent',
+    functional: true,
+    render (h, context) {
+        //process some data before child component rendered
+        const ctxData = context.props.ctxData.filter(d => d.hasSomeProps)
+        return (
+            <barComponent data={ctxData}></barComponent>
+        )
+    }
+}
+
+```
+
 

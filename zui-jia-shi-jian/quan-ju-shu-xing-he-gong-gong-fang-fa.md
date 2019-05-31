@@ -53,5 +53,5 @@ this.$ajax({
 ```
 
 #### $ws
-该方法适用于公司关于websocket封装的业务.
+该方法适用于公司关于websocket封装的业务.默认是关闭状态，如果需要使用则可以前往```config/settings.js```中进行配置
 
