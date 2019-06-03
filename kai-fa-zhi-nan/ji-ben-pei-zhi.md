@@ -16,18 +16,19 @@ export const PLATFORM_PERFIX_NAME = 'YOUR_PROJECT_NAME'
 
 #### 配置开发访问地址和生产环境地址
 
-访问目录为```config/settings.js```下面，```mockBaseUrl```一般我们会配合一套在线模拟API接口的服务来使用，使用模拟数据提供给前端使用，这样后端的开发顺序就不必和前端同步了，我们只需要使前后端相互沟通协调好API接口即可。
+访问目录为```config/settings.js```下面。```devBaseUrl```是指开发模式，框架会使用该地址调用接口，我们通常用一套在线模拟API接口的服务来配合使用，这样后端的开发顺序就不必和前端同步了，我们只需要使前后端相互沟通协调好API接口即可。当然，如果你是全栈，自己同时兼顾前后端也是可以的。```prodBaseUrl```是打包完成后用于生产环境的地址。
+
 ```js
 /**
   * API接口默认参数配置
   */
 export const API_DEFAULT_CONFIG = {
   // 开发环境对应的API访问路径
-  mockBaseUrl: 'http://localhost:3000',
+  devBaseUrl: 'http://localhost:3000',
   // 生产环境对应的API访问路径
   prodBaseUrl: 'http://100.10.10.10:8888',
   // 此处一般不必修改
-  isMocked: process.env.NODE_ENV !== 'production',
+  isDevMode: process.env.NODE_ENV !== 'production',
   // 开启后会打印接口访问info
   isDebug: true,
   // 接口连缀，一般情况下我们不需要修改默认情况下我们调用接口使用类似 this.$api['user.info']()，如果你修改了
